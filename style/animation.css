@@ -23,9 +23,9 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
 /* 블루 배너 */
-section.sec_banner { animation: scroll-left 15s linear infinite; }
+/* section.sec_banner { animation: scroll-left 30s linear infinite; } */

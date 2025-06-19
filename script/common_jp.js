@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function(e){
     headerScrollHandler();
     // bodyScroll();
     privacyUsePopup();
+    privacyUsePopup2();
 })
 document.addEventListener("scroll", function(){
     animationOnHandler();
@@ -29,6 +30,24 @@ const privacyUsePopup = () => {
         e.stopPropagation()
     })
 }
+const privacyUsePopup2 = () => {
+    $('.privacyPopupBtn2').click(function(){
+        $('#privacyPopup').addClass('active');
+    })
+    $('.usePopupBtn').click(function(){
+        $('#usePopup').addClass('active');
+    })
+    $('.privacyPopup .contentWrap .titleBox .closeBtn').click(function(){
+        $('.privacyPopup').removeClass('active')
+    })
+    $('.privacyPopup').click(function(){
+        $('.privacyPopup').removeClass('active')
+    })
+    $('.privacyPopup .contentWrap').click(function(e){
+        e.stopPropagation()
+    })
+}
+
 const bodyScroll = () => {
     gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
