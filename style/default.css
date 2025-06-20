@@ -27,7 +27,7 @@ a {color:#000;text-decoration:none}
   box-sizing:border-box;
 }
 
-input[type=text],input[type=password], textarea {
+/* input[type=text],input[type=password], textarea {
 -webkit-transition:all 0.30s ease-in-out;
 -moz-transition:all 0.30s ease-in-out;
 -ms-transition:all 0.30s ease-in-out;
@@ -40,7 +40,7 @@ input[type=text]:focus,input[type=password]:focus, textarea:focus,select:focus {
 -moz-box-shadow:0 0 5px #9ed4ff;
 box-shadow:0 0 5px #9ed4ff;
 border:1px solid #558ab7 !important;
-}
+} */
 
 .placeholdersjs {color:#aaa !important}
 

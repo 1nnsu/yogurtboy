@@ -27,25 +27,50 @@
             <div class="inner">
                 <nav class="header_menu header_menu1">
                     <ul>
-                        <li><a href="#" class="scroll_move">브랜드</a></li>
-                        <li><a href="#" class="scroll_move">경쟁력</a></li>
-                        <li><a href="#" class="scroll_move">포인트</a></li>
-                        <li><a href="#" class="scroll_move">메뉴</a></li>
+                        <li><a href="./index.html#menu1" class="scroll_move">브랜드</a></li>
+                        <li><a href="./index.html#menu2" class="scroll_move">경쟁력</a></li>
+                        <li><a href="./index.html#menu3" class="scroll_move">포인트</a></li>
+                        <li><a href="./index.html#menu4" class="scroll_move">메뉴</a></li>
                     </ul>
                 </nav>
-                <a href="./index.html">
-                    <img src="./img/header/header_logo.png" alt="헤더로고" class="header_logo">
-                </a>
+                <div class="header_logo_div">
+                    <a href="./index.html">
+                        <img src="./img/header/header_logo.png" alt="헤더로고" class="header_logo">
+                        <img src="./img/header/header_logo_blue.png" alt="헤더로고" class="header_logo_blue">
+                    </a>
+                </div>
                 <nav class="header_menu header_menu2">
                     <ul>
-                        <li><a href="#" class="scroll_move">제조방법</a></li>
-                        <li><a href="#" class="scroll_move">리뷰</a></li>
-                        <li><a href="#" class="scroll_move">창업정보</a></li>
-                        <li><a href="#" class="scroll_move">가맹문의</a></li>
+                        <li><a href="./index.html#menu5" class="scroll_move">제조방법</a></li>
+                        <li><a href="./index.html#menu6" class="scroll_move">리뷰</a></li>
+                        <li><a href="./index.html#menu7" class="scroll_move">창업정보</a></li>
+                        <li><a href="./index.html#menu8" class="scroll_move">가맹문의</a></li>
                     </ul>
                 </nav>
             </div>
+            <button type="" class="ham_btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </header>
+        <div class="sub_menu">
+            <a href="./index.html">
+                <img src="./img/header/header_logo_blue.png" alt="" class="sub_logo">
+            </a>
+            <ul>
+                <li><a href="./index.html#menu1">브랜드</a></li>
+                <li><a href="./index.html#menu2">경쟁력</a></li>
+                <li><a href="./index.html#menu3">포인트</a></li>
+                <li><a href="./index.html#menu4">메뉴</a></li>
+                <li><a href="./index.html#menu5">제조방법</a></li>
+                <li><a href="./index.html#menu6">리뷰</a></li>
+                <li><a href="./index.html#menu7">창업정보</a></li>
+                <li><a href="./index.html#menu8">가맹문의</a></li>
+            </ul>
+        </div>
+        <div class="sub_menu_dim"></div>
+
         <main id="smooth-wrapper" class="sec_top">
             <article id="smooth-content">
                 <section class="sec1">
@@ -75,9 +100,27 @@
                     </div>
                 </section>
                 <section class="sec_banner">
-                    <img src="./img/main/blue_banner.png" alt="블루 배너" class="banner_img">
+                    <div class="swiper banner_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <img src="./img/main/blue_banner.png" alt="블루 배너" class="banner_img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <img src="./img/main/blue_banner.png" alt="블루 배너" class="banner_img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <img src="./img/main/blue_banner.png" alt="블루 배너" class="banner_img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <section class="sec2">
+                <section class="sec2" id="menu1">
                     <div class="inner">
                         <div class="sec2_div1">
                             <p class="text text_1">
@@ -200,9 +243,25 @@
                     </div>
                 </section>
                 <section class="sec_banner">
-                    <img src="./img/main/blue_banner.png" alt="블루 배너" class="banner_img">
+                    <!-- Swiper -->
+                    <div class="swiper banner_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/main/blue_banner.png" alt="블루 배너" class="banner_img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/main/blue_banner.png" alt="블루 배너" class="banner_img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/main/blue_banner.png" alt="블루 배너" class="banner_img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/main/blue_banner.png" alt="블루 배너" class="banner_img">
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <section class="sec4">
+                <section class="sec4" id="menu2">
                     <div class="inner">
                         <div class="sec4_div">
                             <p class="sec4_title">
@@ -232,11 +291,12 @@
                         </div>
                     </div>
                 </section>
-                <section class="sec5">
+                <!-- 완 -->
+                <section class="sec5" id="menu3">
                     <div class="inner">
                         <img src="./img/main/sec5/sec5_logo.png" alt="sec5 로고" class="sec5_logo">
                         <p class="title">
-                            <span class="blue">요거트 아이스크림 창업</span>, 이 <span class="blue">3가지만</span>  기억하세요
+                            <span class="blue">요거트 아이스크림 창업</span>, <br class="nbr">  이 <span class="blue">3가지만</span>  기억하세요
                         </p>
                         <ul>
                             <li>
@@ -251,10 +311,10 @@
                             <li>
                                 <div class="text_1 bold">Reason 2</div>
                                 <img src="./img/main/sec5/sec5_img2.png" alt="이미지2" class="sec5_img1">
-                                <p class="text_2 bold blue">강제구매 없는 진짜 소자본 창업</p>
+                                <p class="text_2 bold blue">누구나 쉽게 운영하는 간편한 시스템</p>
                                 <p class="text_3">
-                                    합리적인 창업 비용과 빠른 투자 <br>
-                                    회수로 부담 없이 시작할 수 있어요.
+                                    복잡한 조리나 인력 없이도 <br>
+                                    매장 운영이 가능한 효율적인 구조입니다.
                                 </p>
                             </li>
                             <li>
@@ -262,20 +322,21 @@
                                 <img src="./img/main/sec5/sec5_img3.png" alt="이미지3" class="sec5_img1">
                                 <p class="text_2 bold blue">강제구매 없는 진짜 소자본 창업</p>
                                 <p class="text_3">
-                                    합리적인 창업 비용과 빠른 투자 <br>
-                                    회수로 부담 없이 시작할 수 있어요.
+                                    요거트 아이스크림의 트렌디한 매력, <br>
+                                    계절 타지 않는 꾸준한 수요가 강점입니다.
                                 </p>
                             </li>
                         </ul>
                     </div>
                 </section>
+                <!-- 완 -->
                 <section class="sec6">
                     <img src="./img/main/sec6/blur1.png" alt="블러1" class="blur blur1">
                     <img src="./img/main/sec6/blur2.png" alt="블러2" class="blur blur2">
                     <div class="inner">
                         <p class="title">
                             누구나 망설이는 시작, <br>
-                            그래서 저희는 <span class="blue bold">시작의 문턱을 과감히 낮췄습니다.</span>
+                            그래서 저희는 <span class="blue bold"><br class="nbr"> 시작의 문턱을 과감히 낮췄습니다.</span>
                         </p>
                         <div class="sec6_div">
                             <div class="box box1">
@@ -372,21 +433,22 @@
                         </ul>
                     </div>
                 </section>
-                <section class="sec7">
-                    <div class="title_box">
-                        <p class="title_en en">From Yogurt to Desserts</p>
-                        <p class="title">
-                            사계절 성수기 <br>
-                            <b>꾸준한 메뉴개발</b> 및 <b>시그니처 메뉴</b>와 <br>
-                            <span class="blue">요거트</span> 부터 <span class="blue">디저트</span>, 음료까지 맛있는 선택
-                        </p>
-                        <div class="sec7_div">
+                <section class="sec7" id="menu4">
+                    <div class="title_div">
+                        <div class="title_box">
+                            <p class="title_en en">From Yogurt to Desserts</p>
+                            <p class="title">
+                                사계절 성수기 <br>
+                                <b>꾸준한 메뉴개발</b> 및 <b>시그니처 메뉴</b>와 <br>
+                                <span class="blue">요거트</span> 부터 <span class="blue">디저트</span>, 음료까지 맛있는 선택
+                            </p>
+                        </div>
                     </div>
 
                     </div>
-                    <div class="inner">
-                        <div class="sec7_div">
-                            <div class="menu_div">
+                    <div class="sec7_div">
+                        <div class="menu_div">
+                            <div class="inner">
                                 <p class="menu_title_en en">Yogurt Ice Cream</p>
                                 <p class="menu_title bold">요거트 아이스크림</p>
                                 <!-- 요거트 아이스크림 -->
@@ -399,104 +461,50 @@
                                                     <ul>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
+                                                                <img src="./img/main/sec7/yogurt/menu1.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">저당 요거트</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
+                                                                <img src="./img/main/sec7/yogurt/menu2.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">초코 요거트</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
+                                                                <img src="./img/main/sec7/yogurt/menu3.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">딸기초코랜드</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
+                                                                <img src="./img/main/sec7/yogurt/menu4.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">바나모찌랜드</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
+                                                                <img src="./img/main/sec7/yogurt/menu5.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">허니랜드</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
+                                                                <img src="./img/main/sec7/yogurt/menu6.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">두바이초코랜드</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
+                                                                <img src="./img/main/sec7/yogurt/menu7.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">피스타치오 치즈랜드</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="box">
-                                                    <ul>
-                                                        <li>
-                                                            <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 2</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 2</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 2</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 2</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
+                                                                <img src="./img/main/sec7/yogurt/menu8.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">그릭 요거트</p>
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -507,50 +515,158 @@
                                                     <ul>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 2</p>
+                                                                <img src="./img/main/sec7/yogurt/menu9.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">아사이볼</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 2</p>
+                                                                <img src="./img/main/sec7/yogurt/menu10.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">딸기쿠키랜드</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 2</p>
+                                                                <img src="./img/main/sec7/yogurt/menu11.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">딸기치즈랜드</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 2</p>
+                                                                <img src="./img/main/sec7/yogurt/menu12.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">허니자몽랜드</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
+                                                                <img src="./img/main/sec7/yogurt/menu13.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">망고랜드</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
+                                                                <img src="./img/main/sec7/yogurt/menu14.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">오몽랜드</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
+                                                                <img src="./img/main/sec7/yogurt/menu15.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">멜론치즈랜드</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/yogurt/menu1.png" alt="요거트아이스크림 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">요거트 1</p>
+                                                                <img src="./img/main/sec7/yogurt/menu16.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">스윗 청포도랜드</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="box">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu17.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">상큼 골드랜드</p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu18.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">이천햅쌀랜드</p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu19.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">뉴욕치즈랜드</p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu20.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">오레오랜드</p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu21.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">바나베리랜드</p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu22.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">애플시나몬넛랜드</p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu23.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">바나팝핑랜드</p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu24.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">커스텀</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="box">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu25.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">딸기코티드</p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu26.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">망고코티드</p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu27.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">딸기초코코티드</p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu28.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">딸기 요거트</p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu29.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">딜라이트 딸기랜드</p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <img src="./img/main/sec7/yogurt/menu30.jpg" alt="요거트아이스크림 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">피스타치오 요거트 아이스크림</p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <!-- <img src="./img/main/sec7/yogurt/menu31.jpg" alt="요거트아이스크림 메뉴" class="y_menu"> -->
+                                                                <p class="y_name bold blue"></p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="item">
+                                                                <!-- <img src="./img/main/sec7/yogurt/menu31.jpg" alt="요거트아이스크림 메뉴" class="y_menu"> -->
+                                                                <p class="y_name bold blue"></p>
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -564,13 +680,31 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- 배너 -->
-                                <section class="sec_banner">
-                                    <img src="./img/main/white_banner.png" alt="화이트 배너" class="banner_img">
-                                </section>
+                            </div>
+                            <!-- 배너 -->
+                            <section class="sec_banner type2">
+                                <!-- Swiper -->
+                                <div class="swiper banner_swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./img/main/white_banner.png" alt="블루 배너" class="banner_img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/main/white_banner.png" alt="블루 배너" class="banner_img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/main/white_banner.png" alt="블루 배너" class="banner_img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/main/white_banner.png" alt="블루 배너" class="banner_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="inner">
                                 <!-- 디저트 -->
-                                <p class="menu_title_en en">Yogurt Ice Cream</p>
-                                <p class="menu_title bold">요거트 아이스크림</p>
+                                <p class="menu_title_en en">Dessert</p>
+                                <p class="menu_title bold">디저트</p>
                                 <div class="yogurt_div dessert_div">
                                     <!-- Swiper -->
                                     <div class="swiper dessert_swiper">
@@ -580,50 +714,50 @@
                                                     <ul>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/dessert/menu1.png" alt="디저트 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">디저트 1</p>
+                                                                <img src="./img/main/sec7/dessert/menu1.jpg" alt="디저트 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">소금빵</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/dessert/menu1.png" alt="디저트 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">디저트 1</p>
+                                                                <img src="./img/main/sec7/dessert/menu2.jpg" alt="디저트 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">모카번 소금빵</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/dessert/menu1.png" alt="디저트 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">디저트 1</p>
+                                                                <img src="./img/main/sec7/dessert/menu3.jpg" alt="디저트 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">페레로로쉐</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/dessert/menu1.png" alt="디저트 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">디저트 1</p>
+                                                                <img src="./img/main/sec7/dessert/menu4.jpg" alt="디저트 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">특별한 날 <br>스위트 레인보우</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/dessert/menu1.png" alt="디저트 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">디저트 1</p>
+                                                                <img src="./img/main/sec7/dessert/menu5.jpg" alt="디저트 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">깨먹는 <br> 코티드 티라미수</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/dessert/menu1.png" alt="디저트 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">디저트 1</p>
+                                                                <img src="./img/main/sec7/dessert/menu6.jpg" alt="디저트 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">보이랜드 <br> 롱 츄러스</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/dessert/menu1.png" alt="디저트 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">디저트 1</p>
+                                                                <img src="./img/main/sec7/dessert/menu7.jpg" alt="디저트 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">크로크무슈</p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="item">
-                                                                <img src="./img/main/sec7/dessert/menu1.png" alt="디저트 메뉴" class="y_menu">
-                                                                <p class="y_name bold blue">디저트 1</p>
+                                                                <img src="./img/main/sec7/dessert/menu8.jpg" alt="디저트 메뉴" class="y_menu">
+                                                                <p class="y_name bold blue">점보 에그타르트</p>
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -632,12 +766,11 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="sec8">
+                <section class="sec8" id="menu5">
                     <img src="./img/main/sec8/cream1.jpg" alt="크림1" class="cream cream1">
                     <img src="./img/main/sec8/cream2.jpg" alt="크림2" class="cream cream2">
                     <div class="inner">
@@ -697,7 +830,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="sec9">
+                <section class="sec9" id="menu6">
                     <div class="inner">
                         <p class="title">
                             <span class="blue bold">진짜 후기, 그대로 보여드려요!</span>
@@ -711,48 +844,69 @@
                                         <img src="./img/main/sec9/sec9_img1.jpg" alt="후기" class="sec9_img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/main/sec9/sec9_img1.jpg" alt="후기" class="sec9_img">
+                                        <img src="./img/main/sec9/sec9_img2.jpg" alt="후기" class="sec9_img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/main/sec9/sec9_img1.jpg" alt="후기" class="sec9_img">
+                                        <img src="./img/main/sec9/sec9_img3.jpg" alt="후기" class="sec9_img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/main/sec9/sec9_img1.jpg" alt="후기" class="sec9_img">
+                                        <img src="./img/main/sec9/sec9_img4.jpg" alt="후기" class="sec9_img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/main/sec9/sec9_img1.jpg" alt="후기" class="sec9_img">
+                                        <img src="./img/main/sec9/sec9_img5.jpg" alt="후기" class="sec9_img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/main/sec9/sec9_img1.jpg" alt="후기" class="sec9_img">
+                                        <img src="./img/main/sec9/sec9_img6.jpg" alt="후기" class="sec9_img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/main/sec9/sec9_img7.jpg" alt="후기" class="sec9_img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/main/sec9/sec9_img8.jpg" alt="후기" class="sec9_img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/main/sec9/sec9_img9.jpg" alt="후기" class="sec9_img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/main/sec9/sec9_img10.jpg" alt="후기" class="sec9_img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/main/sec9/sec9_img11.jpg" alt="후기" class="sec9_img">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper sec9_swiper2" dir="ltl">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="./img/main/sec9/sec9_img1.jpg" alt="후기" class="sec9_img">
+                                        <img src="./img/main/sec9/sec9_img1_c.jpg" alt="후기" class="sec9_img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/main/sec9/sec9_img1.jpg" alt="후기" class="sec9_img">
+                                        <img src="./img/main/sec9/sec9_img2_c.jpg" alt="후기" class="sec9_img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/main/sec9/sec9_img1.jpg" alt="후기" class="sec9_img">
+                                        <img src="./img/main/sec9/sec9_img3_c.jpg" alt="후기" class="sec9_img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/main/sec9/sec9_img1.jpg" alt="후기" class="sec9_img">
+                                        <img src="./img/main/sec9/sec9_img4_c.jpg" alt="후기" class="sec9_img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/main/sec9/sec9_img1.jpg" alt="후기" class="sec9_img">
+                                        <img src="./img/main/sec9/sec9_img5_c.jpg" alt="후기" class="sec9_img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/main/sec9/sec9_img1.jpg" alt="후기" class="sec9_img">
+                                        <img src="./img/main/sec9/sec9_img6_c.jpg" alt="후기" class="sec9_img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/main/sec9/sec9_img7_c.jpg" alt="후기" class="sec9_img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/main/sec9/sec9_img8_c.jpg" alt="후기" class="sec9_img">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="sec10">
+                <section class="sec10" id="menu7">
                     <div class="inner">
                         <div class="title title_box">
                             <div class="box">
@@ -855,7 +1009,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="sec11">
+                <section class="sec11" id="menu8">
                     <div class="inner">
                         <div class="sec11_div">
                             <ul class="sec11_ul">
@@ -989,5 +1143,39 @@
                 </div>
             </div>
         </section>
+        <!-- 하단 메뉴 -->
+        <!-- <section class="b_menu_sec">
+            <div class="inner">
+                <div class="text_box">
+                    <p class="text_1">상담문의</p>
+                    <p class="text_2 bold">0502 - 1949 - 1171</p>
+                </div>
+                <form action="">
+                    <ul>
+                        <li>
+                            <input class="b_ipt" type="text" placeholder="성함">
+                        </li>
+                        <li>
+                            <input class="b_ipt" type="tel" placeholder="연락처">
+                        </li>
+                        <li>
+                            <input class="b_ipt" type="text" placeholder="희망지역">
+                        </li>
+                    </ul>
+                </form>
+                <div class="b_menu_div">
+                    <div class="agreeCheckDiv">
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="textBox"><span class="privacyPopupBtn">개인정보수집 동의</span></div>
+                        </label>
+                    </div>
+                    <button type="submit" class="b_menu_btn bold">창업 문의하기</button>
+                    <button class="open_btn">
+                        <img src="./img/main/arrow.png" alt="화살표" class="arrow">
+                    </button>
+                </div>
+            </div>
+        </section> -->
     </body>
 </html>

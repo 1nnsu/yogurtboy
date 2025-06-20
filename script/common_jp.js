@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function(e){
     // bodyScroll();
     privacyUsePopup();
     privacyUsePopup2();
+    header_scroll_move();
 })
 document.addEventListener("scroll", function(){
     animationOnHandler();
@@ -74,6 +75,15 @@ const headerScrollHandler = () => {
             }
         })
     }
+}
+const header_scroll_move = () => {
+    //scroll move 
+    $(".scroll_move").click(function(e){  
+
+        e.preventDefault();       
+        
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+    });
 }
 const animationOnHandler = () => {
     const countList = document.querySelectorAll('.ani');
