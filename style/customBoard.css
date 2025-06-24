@@ -205,7 +205,7 @@ textarea.ipt{ resize: none; height: 170px; }
 .formList .ipt + .red{ margin-top: 5px; display: block; }
 .formList .scrollDiv{ border: 1px solid #E4E4E4; padding: 10px; height: 200px; overflow-y: scroll; color: #7F7F7F; line-height: 1.5em; }
 input[type="file"].ipt{ border-radius: 8px; padding: 15px 15px 15px 45px; background-image: url('../img/boardImg/folder.png'); background-repeat: no-repeat; background-position: left 10px center; }
-textarea.ipt{ resize: none; height: 170px; }
+textarea.ipt{ resize: none; height: 150px; }
 .formList .iptBox.btnIpt{ display: flex; gap: 4px; }
 .formList .iptBox .grayBtn{ flex-shrink: 0; padding: 10px 20px; background: #222; border: none; border-radius: 0; color: #fff; }
 

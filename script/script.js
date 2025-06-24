@@ -25,6 +25,11 @@ const banner = () => {
         loopedSlides: 10,
         spaceBetween: 40,
         allowTouchMove: false,
+        breakpoints: {
+            1280: {
+                spaceBetween: 20,
+            },
+        }
     });
 }
 
@@ -109,6 +114,23 @@ const review1 = () => {
         loopedSlides: 5,
         spaceBetween: 40,
         allowTouchMove: false,
+        breakpoints: {
+            1280: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 1.5,
+                spaceBetween: 10,
+            },
+
+        }
         });
 }
 
@@ -125,7 +147,25 @@ const review2 = () => {
         loopedSlides: 5,
         spaceBetween: 40,
         allowTouchMove: false,
+        breakpoints: {
+            1280: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 1.5,
+                spaceBetween: 10,
+            },
+        }
+
         });
+        
 }
 const b_menu_hide = () => {
         window.addEventListener("scroll", function () {
