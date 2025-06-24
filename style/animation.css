@@ -34,9 +34,66 @@
   from { opacity: 0; transform: translateY(10px); filter: blur(4px); } to { opacity: 1; transform: translateY(0); filter: blur(0); } 
 }
 @keyframes fadeIn2 { 0% { opacity: 0; transform: translate3d(-30px, 0, 0); } 100% { opacity: 1; transform: translate3d(0, 0, 0); } }
-/* 블루 배너 */
-/* section.sec_banner { animation: scroll-left 30s linear infinite; } */
+@keyframes arrowDown {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(10px); opacity: 0.7; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes floatPopY {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-8px) scale(1.03); }
+}
 
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes swing {
+  0% { transform: rotate(0); }
+  25% { transform: rotate(4deg); }
+  50% { transform: rotate(-4deg); }
+  75% { transform: rotate(2deg); }
+  100% { transform: rotate(0); }
+}
+@keyframes swing2 {
+  0% { transform: rotate(0); }
+  25% { transform: rotate(5deg); } /* 약간 다르게 */
+  50% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0); }
+}
+@keyframes floatWave {
+  0% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-3px) rotate(1deg); }
+  50% { transform: translateY(-6px) rotate(0deg); }
+  75% { transform: translateY(-3px) rotate(-1deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+@keyframes popBounce {
+  0%, 100% { transform: scale(1); }
+  30% { transform: scale(1.08); }
+  60% { transform: scale(0.95); }
+}
+@keyframes starPop {
+  0% { opacity: 0; transform: scale(0); }
+  80% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes breeze {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  75% { transform: rotate(-1deg); }
+}
 /* sec1 */
 section.sec1 .sec1_div .box .text_1 { opacity: 0; }
 section.sec1.on .sec1_div .box .text_1 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
@@ -48,8 +105,24 @@ section.sec1.on .sec1_div .sec1_img1 { animation: zoomIn 0.9s ease-out forwards;
 /* sec2 미완 */
 section.sec2 .sec2_div1 .text_1 { opacity: 0; }
 section.sec2.on .sec2_div1 .text_1 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
-/* section.sec2 .sec2_div1 .text_2 { opacity: 0; }
-section.sec2.on .sec2_div1 .text_2 { animation: showHide 0.2s ease-in-out 0s 1 forwards running;animation-delay: 0.3s; } */
+section.sec2 .sec2_div1 .text_2 { opacity: 0; }
+section.sec2.on .sec2_div1 .text_2 { animation: zoomIn 0.5s ease-in-out 0s 1 forwards running;animation-delay: 0.2s; }
+section.sec2 .sec2_div1 .text_3 { opacity: 0; }
+section.sec2.on .sec2_div1 .text_3 { animation: zoomIn 0.5s ease-in-out 0s 1 forwards running;animation-delay: 0.3s; }
+
+section.sec2 .sec2_div2 .imgBox1 { opacity: 0; }
+section.sec2.on .sec2_div2 .imgBox1 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running;animation-delay: 0.2s; }
+section.sec2 .sec2_div2 .imgBox2 { opacity: 0; }
+section.sec2.on .sec2_div2 .imgBox2 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running;animation-delay: 0.2s; }
+section.sec2 .sec2_div2 .textBox3 { opacity: 0; }
+section.sec2.on .sec2_div2 .textBox3 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running;animation-delay: 0.2s; }
+
+@media screen and (max-width: 480px) {
+  section.sec2.on .sec2_div2 .imgBox1 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running;animation-delay: 0.4s; }
+  section.sec2.on .sec2_div2 .imgBox2 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running;animation-delay: 0.2s; }
+  section.sec2.on .sec2_div2 .textBox3 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running;animation-delay: 0.8s; }
+
+}
 
 /* sec3 미완 */
 section.sec3 .sec3_div1 .text_1 { opacity: 0; }
@@ -58,7 +131,6 @@ section.sec3 .sec3_div1 .text_2 { opacity: 0; }
 section.sec3.on .sec3_div1 .text_2 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
 section.sec3 .sec3_div1 .imgBox { opacity: 0; }
 section.sec3.on .sec3_div1 .imgBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s; }
-
 
 
 /* sec4 */
@@ -81,6 +153,13 @@ section.sec5 ul li:nth-of-type(2) { opacity: 0; }
 section.sec5.on ul li:nth-of-type(2) { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.4s; }
 section.sec5 ul li:nth-of-type(3) { opacity: 0; }
 section.sec5.on ul li:nth-of-type(3) { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.6s; }
+
+@media screen and (max-width: 480px) {
+  section.sec5 ul li:nth-of-type(1).on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
+  section.sec5 ul li:nth-of-type(2).on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.4s; }
+  section.sec5 ul li:nth-of-type(3).on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.6s; }
+}
+
 
 /* sec6 */
 section.sec6 .title { opacity: 0; }
@@ -106,15 +185,182 @@ section.sec6 .sec6_ul.on li:nth-of-type(7) { animation: showHide 0.5s ease-in-ou
 section.sec6 .sec6_ul li:nth-of-type(8) { opacity: 0; }
 section.sec6 .sec6_ul.on li:nth-of-type(8) { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s;}
 
+@media screen and (max-width: 480px) {
+  section.sec6 .sec6_div.on .box:nth-of-type(1) { animation: showHide 0.5s ease-in-out 0s 1 forwards running; }
+  section.sec6 .sec6_div.on .box:nth-of-type(2) { animation: showHide 0.5s ease-in-out 0s 1 forwards running;animation-delay: 0.2s; }
+  section.sec6 .sec6_ul li.list1.on { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s;}
+  section.sec6 .sec6_ul li.list2.on { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s;}
+  section.sec6 .sec6_ul li.list3.on { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.4s;}
+  section.sec6 .sec6_ul li.list4.on { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.5s;}
+  section.sec6 .sec6_ul li.list5.on { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.6s;}
+  section.sec6 .sec6_ul li.list6.on { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.7s;}
+  section.sec6 .sec6_ul li.list7.on { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.8s;}
+  section.sec6 .sec6_ul li.list8.on { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.9s;}
+}
+
 /* sec7 */
 section.sec7 .title_box { opacity: 0; }
 section.sec7.on .title_box { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.sec7 .sec7_div .inner1 .menu_title_en { opacity: 0; }
+section.sec7.on .sec7_div .inner1 .menu_title_en { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.25s;}
+section.sec7 .sec7_div .inner1 .menu_title { opacity: 0; }
+section.sec7.on .sec7_div .inner1 .menu_title { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s;}
 
+section.sec7 .yogurt_div.pc { opacity: 0; }
+section.sec7 .yogurt_div.pc.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s;}
+section.sec_banner.type2 { opacity: 0; }
+section.sec_banner.type2.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s;}
 
+section.sec7 .sec7_div .inner2 .menu_title_en { opacity: 0; }
+section.sec7 .sec7_div .inner2.on .menu_title_en { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running;}
+section.sec7 .sec7_div .inner2 .menu_title { opacity: 0; }
+section.sec7 .sec7_div .inner2.on .menu_title { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.05s;}
 
-
+section.sec7 .inner2 .dessert_div { opacity: 0; }
+section.sec7 .inner2.on .dessert_div { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s;}
 
 /* sec8 */
+section.sec8 .title  { opacity: 0; }
+section.sec8.on .title  { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.sec8 .title .blue { opacity: 0; }
+section.sec8.on .title .blue { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running;  }
+section.sec8 .title .small { opacity: 0; }
+section.sec8.on .title .small { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
+
+section.sec8 .sec8_div ul li.list1 .item .sec8_img1 { opacity: 0; }
+section.sec8 .sec8_div ul.on li.list1 .item .sec8_img1 { animation: showHide 0.5s ease-in-out 0s 1 forwards running; }
+section.sec8 .sec8_div ul li.list2 .item .sec8_img1 { opacity: 0; }
+section.sec8 .sec8_div ul.on li.list2 .item .sec8_img1 { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s;}
+section.sec8 .sec8_div ul li.list3 .item .sec8_img1 { opacity: 0; }
+section.sec8 .sec8_div ul.on li.list3 .item .sec8_img1 { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s;}
+
+
+section.sec8 .sec8_div ul li.list1 .item .sec8_img4 { opacity: 0; }
+section.sec8 .sec8_div ul.on li.list1 .item .sec8_img4 { animation: showHide 0.5s ease-in-out 0s 1 forwards running; }
+section.sec8 .sec8_div ul li.list2 .item .sec8_img4 { opacity: 0; }
+section.sec8 .sec8_div ul.on li.list2 .item .sec8_img4 { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s;}
+section.sec8 .sec8_div ul li.list3 .item .sec8_img4 { opacity: 0; }
+section.sec8 .sec8_div ul.on li.list3 .item .sec8_img4 { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s; }
+
+section.sec8 .sec8_div ul li.list1 .item .text_box { opacity: 0; }
+section.sec8 .sec8_div ul li.list1 .item.on .text_box { animation: showHide 0.5s ease-in-out 0s 1 forwards running; }
+section.sec8 .sec8_div ul li.list2 .item .text_box { opacity: 0; }
+section.sec8 .sec8_div ul li.list2 .item.on .text_box { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s;}
+section.sec8 .sec8_div ul li.list3 .item .text_box { opacity: 0; }
+section.sec8 .sec8_div ul li.list3 .item.on .text_box { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s; }
+
+section.sec8 .sec8_div .sec8_arrow { animation: arrowDown 1.5s infinite ease-in-out forwards running; }
+
+section.sec8 .sec8_div .c_text { animation: floatPopY 2s ease-in infinite; animation-delay: .2s; }
+section.sec8 .sec8_div .ice_cream1 { animation: floatY 2s ease-in infinite;  }
+section.sec8 .sec8_div .ice_cream2 { animation: floatY 2s ease-in infinite; animation-delay: .5s; }
+
 /* sec9 */
-/* sec10 */
+section.sec9 .title .blue {  }
+section.sec9 .title .small {  }
+
+section.sec9 .title .blue { opacity: 0; }
+section.sec9.on .title .blue { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running;}
+section.sec9 .title .small { opacity: 0; }
+section.sec9.on .title .small { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: .2s;}
+
+section.sec9 .sec9_div .sec9_swiper1 { opacity: 0; }
+section.sec9 .sec9_div.on .sec9_swiper1 { animation: fadeInLeft 0.8s ease-in-out 0s 1 forwards running; animation-delay: .1s;}
+section.sec9 .sec9_div .sec9_swiper2 { opacity: 0; }
+section.sec9 .sec9_div.on .sec9_swiper2 { animation: fadeInRight 0.8s ease-in-out 0s 1 forwards running; animation-delay: .2s;}
+
+/* sec10 미완 */
+section.sec10 .title_box { opacity: 0; }
+section.sec10.on .title_box { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.sec10 .title_box .box .star_box .item .star1 { opacity: 0; }
+section.sec10.on .title_box .box .star_box .item .star1 { animation: starPop 0.5s ease-in-out 0s 1 forwards running; animation-delay: .2s;}
+section.sec10 .title_box .box .star_box .item .star2 { opacity: 0; }
+section.sec10.on .title_box .box .star_box .item .star2 { animation: starPop 0.5s ease-in-out 0s 1 forwards running; animation-delay: .3s;}
+section.sec10 .title_box .box .star_box .item .star3 { opacity: 0; }
+section.sec10.on .title_box .box .star_box .item .star3 { animation: starPop 0.5s ease-in-out 0s 1 forwards running; animation-delay: .4s;}
+
+section.sec10 .img_box ul li .sec10_img { animation: floatPopY 2.5s ease-in-out infinite;}
+section.sec10 .img_box ul li .sec10_img1 { animation-delay: 0s; }
+section.sec10 .img_box ul li .sec10_img2 { animation-delay: 0.2s; }
+section.sec10 .img_box ul li .sec10_img3 { animation-delay: 0.4s; }
+section.sec10 .img_box ul li .sec10_img4 { animation-delay: 0.6s; }
+section.sec10 .img_box ul li .sec10_img5 { animation-delay: 0.8s; }
+section.sec10 .img_box ul li .sec10_img6 { animation-delay: 1s; }
+
 /* sec11 */
+section.sec11 .sec11_div ul.sec11_ul > li .title { opacity: 0; }
+section.sec11.on .sec11_div ul.sec11_ul > li .title { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running;}
+section.sec11 .sec11_div ul.sec11_ul > li .title .small { opacity: 0; }
+section.sec11.on .sec11_div ul.sec11_ul > li .title .small { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: .2s;}
+section.sec11 .sec11_div .sec11_form_box { opacity: 0; }
+section.sec11.on .sec11_div .sec11_form_box { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: .3s;}
+
+section.sec11 .sec11_div ul.sec11_ul .sec11_img { opacity: 0; }
+section.sec11.on .sec11_div ul.sec11_ul .sec11_img { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.sec11 .sec11_img2.mo
+section.sec11 .sec11_img2.mo { opacity: 0; }
+section.sec11 .sec11_img2.mo.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+
+
+
+
+
+
+section.sec10 ul li.content .text_1.red::before{ opacity: 0; }
+section.sec10 ul li.content.on .text_1.red::before{ animation : rotateItem 0.5s ease-in-out 0s 1 forwards running; }
+
+@keyframes rotateItem {
+  0%{ opacity: 0; transform: rotate(15deg); scale: 2; }
+  100%{ opacity: 1; transform: rotate(0deg); scale: 1; }
+}
+
+
+
+section.sec3 .sec3_div2 .graph_div ul { height: 426px; overflow: hidden; }
+section.sec3 .sec3_div2 .graph_div ul li {  }
+section.sec3 .sec3_div2 .graph_div ul li.list1 .graph_box{ }
+section.sec3 .sec3_div2.on .graph_div ul li.list1 .graph_box{ animation: growHeight1 3s ease forwards running; }    
+section.sec3 .sec3_div2 .graph_div ul li.list2 .graph_box{  }
+section.sec3 .sec3_div2.on .graph_div ul li.list2 .graph_box{ animation: growHeight2 3s ease forwards running; }    
+section.sec3 .sec3_div2 .graph_div ul li.list3 .graph_box{  }
+section.sec3 .sec3_div2.on .graph_div ul li.list3 .graph_box{ animation: growHeight3 3s ease forwards running; }    
+section.sec3 .sec3_div2 .graph_div ul li.list4 .graph_box{  }
+section.sec3 .sec3_div2.on .graph_div ul li.list4 .graph_box{ animation: growHeight4 3s ease forwards running; }    
+
+@media screen and (max-width: 480px) {
+  section.sec3 .sec3_div2 .graph_div ul { height: 324px; }
+  section.sec3 .sec3_div2 .graph_div ul li.list1 .graph_box{ }
+  section.sec3 .sec3_div2.on .graph_div ul li.list1 .graph_box{ animation: growHeight1_mo 3s ease forwards running; }    
+  section.sec3 .sec3_div2 .graph_div ul li.list2 .graph_box{  }
+  section.sec3 .sec3_div2.on .graph_div ul li.list2 .graph_box{ animation: growHeight2_mo 3s ease forwards running; }    
+  section.sec3 .sec3_div2 .graph_div ul li.list3 .graph_box{  }
+  section.sec3 .sec3_div2.on .graph_div ul li.list3 .graph_box{ animation: growHeight3_mo 3s ease forwards running; }    
+  section.sec3 .sec3_div2 .graph_div ul li.list4 .graph_box{  }
+  section.sec3 .sec3_div2.on .graph_div ul li.list4 .graph_box{ animation: growHeight4_mo 3s ease forwards running; }    
+  
+}
+
+
+
+section.sec3 .sec3_div2 .graph_div ul li .graph_box .date { opacity: 0; }
+section.sec3 .sec3_div2.on .graph_div ul li .graph_box .date { animation: opItem 0.5s ease-in-out 0s 1 forwards running;animation-delay: 0.2s; }
+
+section.sec3 .sec3_div2 .graph_div .text_2 { opacity: 0; }
+section.sec3 .sec3_div2.on .graph_div .text_2 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running;animation-delay: 0.4s; }
+
+@keyframes growHeight1 { 0% { height: 0; } 100% { height: 222px; } }
+@keyframes growHeight2 { 0% { height: 0; } 100% { height: 262px; } }
+@keyframes growHeight3 { 0% { height: 0; } 100% { height: 315px; } }
+@keyframes growHeight4 { 0% { height: 0; } 100% { height: 390px; } }
+@keyframes growHeight1_mo { 0% { height: 0; } 100% { height: 132px; } }
+@keyframes growHeight2_mo { 0% { height: 0; } 100% { height: 172px; } }
+@keyframes growHeight3_mo { 0% { height: 0; } 100% { height: 225px; } }
+@keyframes growHeight4_mo { 0% { height: 0; } 100% { height: 300px; } }
+@keyframes opItem {
+  0%{ opacity: 0; }
+  100%{ opacity: 1;  }
+}
+
+

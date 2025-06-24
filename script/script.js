@@ -1,6 +1,8 @@
 
 
 document.addEventListener("DOMContentLoaded", function(e){
+    scroll_move();
+    // scroll_move_header();
     banner();
     rightMenuSlide();
     ham_btn();
@@ -10,7 +12,27 @@ document.addEventListener("DOMContentLoaded", function(e){
     review2();
     b_menu_hide();
     b_menu_toggle();
+    b_menu_scroll_top();
 ;})
+
+
+
+const scroll_move = () => {
+    //scroll move 
+    $(".scroll_move").click(function(e){  
+
+        e.preventDefault();       
+        
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 300);
+    });
+}
+const scroll_move_header = () => {
+        $(".scroll_move").click(function(e){  
+        var header_height = $('header').outerHeight(true);
+        e.preventDefault();       
+        $('html,body').animate({scrollTop:$(this.hash).offset().top - header_height}, 1000);
+    });
+}
 
 const banner = () => {
     var swiper = new Swiper(".banner_swiper", {
@@ -28,6 +50,8 @@ const banner = () => {
         breakpoints: {
             1280: {
                 spaceBetween: 20,
+            },
+            500: {
             },
         }
     });
@@ -175,7 +199,7 @@ const b_menu_hide = () => {
     const documentHeight = document.documentElement.scrollHeight;
     const fixedForm = document.querySelector(".b_menu_sec");
 
-    if (scrollTop + windowHeight >= documentHeight - 1) {
+    if (scrollTop + windowHeight >= documentHeight - 100) {
         fixedForm.classList.add("hide"); // 스크롤 끝 → 숨김
     } 
     });
@@ -186,4 +210,14 @@ const b_menu_toggle = () => {
         $('.b_menu_sec').toggleClass('hide');
     })
 }
+const b_menu_scroll_top = () => {
+   
+     $("body").on("mousewheel", function (e) {
+        var wheel = e.originalEvent.wheelDelta;
+        if (wheel > 0) {
+            $('.b_menu_sec').removeClass("hide");
+        } 
+    });  
+}
+
 
