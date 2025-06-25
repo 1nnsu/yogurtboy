@@ -114,7 +114,7 @@ header button.ham_btn.on span:nth-child(3) { transform: rotate(-45deg) translate
 }
 
 /* 서브메뉴 */
-.sub_menu { width: 90%; max-width: 400px; height: 100%; padding: 80px 30px; position: fixed; top: 0; right: -400px; background-color: #fff; z-index: 100; transition: right .5s; }
+.sub_menu { width: 90%; max-width: 400px; height: 100%; padding: 30px 30px; position: fixed; top: 0; right: -400px; background-color: #fff; z-index: 100; transition: right .5s; }
 .sub_menu .sub_logo { margin-bottom: 50px; }
 .sub_menu ul { display: flex; flex-direction: column; gap: 30px; }
 .sub_menu ul li { font-size: 24px; font-weight: 700; font-family: "Plus Jakarta Sans", sans-serif; color: var(--mainBlue); }
@@ -225,7 +225,7 @@ section.sec1 .sec1_div .sec1_img1 { max-width: 500px; width:; }
 }
 
 @media screen and (max-width: 480px) {
-    section.sec1 .sec1_div .sec1_img1 { width: 90%; }
+    section.sec1 .sec1_div .sec1_img1 { width: 70%; }
 }
 
 
@@ -799,6 +799,7 @@ section.sec10 ul li.head .text_1 { font-size: 36px; }
 section.sec10 ul li.content {  font-size: 32px; background-color: var(--white-color); text-align: center; }
 section.sec10 ul li.content .text_1.red { font-size: 42px; color: #D63333; text-decoration: line-through; text-decoration-thickness: 3px; position: relative; }
 section.sec10 ul li.content .text_1.red::before { content: ''; position: absolute; top: -35%; left: -29%; display: block; width: 162px; height: 113px; background: url('../img/main/sec10/waiver.png') no-repeat center / contain; }
+section.sec10 ul li.content .text_1.waiver::before { content: ''; position: absolute; top: -35%; left: -29%; display: block; width: 162px; height: 113px; background: url('../img/main/sec10/waiver.png') no-repeat center / contain; }
 section.sec10 ul li.content .text_1.red.dn::before { display: none; }
 section.sec10 ul li.content .box1 { border-right: 1px solid #D4D4D4; border-bottom: 1px solid #D4D4D4; }
 section.sec10 ul li.content .box2 { border-right: 1px solid #D4D4D4; border-bottom: 1px solid #D4D4D4; }
@@ -985,7 +986,7 @@ footer .footer_div .box2 .item .text_2 { font-size: 14px; font-weight: 400; }
 
 /* b_menu 섹션 */
 section.sec_banner .banner_swiper .swiper-wrapper { transition-timing-function: linear; }
-section.b_menu_sec { position: relative; padding: 15px; width: 100%; position: fixed; z-index: 999; bottom: 0; left: 0; background-color: var(--navy-color); color: var(--white-color); transition: bottom 200ms; }
+section.b_menu_sec { position: relative; padding: 15px; width: 100%; position: fixed; z-index: 4; bottom: 0; left: 0; background-color: var(--navy-color); color: var(--white-color); transition: bottom 200ms; }
 section.b_menu_sec .inner { max-width: 1400px; }
 section.b_menu_sec .b_div {  }
 section.b_menu_sec.hide { bottom: -200px; }

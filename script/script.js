@@ -220,4 +220,13 @@ const b_menu_scroll_top = () => {
     });  
 }
 
-
+// 윈도우가 리사이즈 될때 반응형 !
+$(window).resize(function() {
+	if($(window).width() < 900) {
+	    // window 크기가 900보다 작을때
+	} else {
+	    // window 크기가 900보다 클때
+        $('.sub_menu').removeClass('side')
+        $('.sub_menu_dim').removeClass('side')
+	}
+})

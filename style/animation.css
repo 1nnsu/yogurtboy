@@ -311,6 +311,7 @@ section.sec11 .sec11_img2.mo.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwar
 section.sec10 ul li.content .text_1.red::before{ opacity: 0; }
 section.sec10 ul li.content.on .text_1.red::before{ animation : rotateItem 0.5s ease-in-out 0s 1 forwards running; }
 
+
 @keyframes rotateItem {
   0%{ opacity: 0; transform: rotate(15deg); scale: 2; }
   100%{ opacity: 1; transform: rotate(0deg); scale: 1; }
