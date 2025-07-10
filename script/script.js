@@ -26,13 +26,6 @@ const scroll_move = () => {
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 300);
     });
 }
-const scroll_move_header = () => {
-        $(".scroll_move").click(function(e){  
-        var header_height = $('header').outerHeight(true);
-        e.preventDefault();       
-        $('html,body').animate({scrollTop:$(this.hash).offset().top - header_height}, 1000);
-    });
-}
 
 const banner = () => {
     var swiper = new Swiper(".banner_swiper", {
