@@ -246,7 +246,10 @@ section.sec2 .sec2_div2 .imgBox2 .text_1 { font-size: 28px; color: var(--main-co
 section.sec2 .sec2_div2 .textBox3 { max-width: 450px; width: 100%; }
 section.sec2 .sec2_div2 .textBox3 ul { height: 100%; display: flex; justify-content: space-between; flex-direction: column; }
 section.sec2 .sec2_div2 .textBox3 ul li { font-size: 37px; padding: 85px 0; display: flex; align-items: center; justify-content: center; background-color: var(--navy-color); color: var(--white-color); }
-section.sec2 .sec2_div2 .textBox3 ul li.gold { color: var(--yellow-color); }
+section.sec2 .sec2_div2 .textBox3 ul li.gold { color: var(--yellow-color); animation: whiteToYello 1s ease-in-out infinite;}
+section.sec2 .sec2_div2 .textBox3 ul li.gold b { position: relative; }
+section.sec2 .sec2_div2 .textBox3 ul li.gold b::before { content: url('../img/y_shine_1.png'); display: inline-block; position: absolute; top: -23px; left: -20px; animation: whiteToYello_2 2s ease-in-out 0.2s infinite;}
+section.sec2 .sec2_div2 .textBox3 ul li.gold b::after { content: url('../img/y_shine_2.png'); display: inline-block; position: absolute; right: -20px; bottom: -20px; animation: whiteToYello_2 2s ease-in-out 0.4s infinite;}
 
 section.sec2 .sec2_div3 .text_1 { font-size: 32px; color: var(--white-color); text-align: center; line-height: 1.5; font-weight: 700; }
 
@@ -290,6 +293,8 @@ section.sec2 .sec2_div3 .text_1 { font-size: 32px; color: var(--white-color); te
     section.sec2 .sec2_div2 .imgBox2 .text_1 { margin-bottom: 30px; }
     section.sec2 .sec2_div2 .textBox3 ul li { padding: 8vw 0; font-size: 20px; }
 
+    section.sec2 .sec2_div2 .textBox3 ul li.gold b::before { transform: scale(0.7); top: -16px; }
+    section.sec2 .sec2_div2 .textBox3 ul li.gold b::after { transform: scale(0.7); bottom: -15px; right: -18px; }
 }
 
 @media screen and (max-width: 480px) {
